@@ -38,7 +38,7 @@ try:
         f"CRITICAL ERROR: 404 page routing was silently dropped! "
         f"Expected '404.html', but cloud reports: '{actual_404_path}'"
     )
-    print(f"✅ SUCCESS: 404 error routing verified. Live state: '{actual_404_path}'")
+    print("SUCCESS: 404 error routing verified. Live state: '{actual_404_path}'")
 except AssertionError as e:
-    print(f"❌ VALIDATION FAILED: {e}")
+    print("VALIDATION FAILED: {e}")
     sys.exit(1)
