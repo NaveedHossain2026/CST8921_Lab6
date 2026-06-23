@@ -1,0 +1,7 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=cst8921lab6nt123;AccountKey=UuI6ENud/TmQ3zng0KWFHLmaK3xQWkR6z1lQgG1bLDUARpnjz03zY6OOHYbjEFBXApS49xhCzK/x+AStzRMhSg==;BlobEndpoint=https://cst8921lab6nt123.blob.core.windows.net/;FileEndpoint=https://cst8921lab6nt123.file.core.windows.net/;QueueEndpoint=https://cst8921lab6nt123.queue.core.windows.net/;TableEndpoint=https://cst8921lab6nt123.table.core.windows.net/"
+  }
+}
