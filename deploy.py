@@ -31,14 +31,11 @@ for path in SITE_DIR.rglob("*"):
             name=blob_name,
             data=fh,
             overwrite=True,
-            # --- COMMENT THIS OUT TO RUN THE EXPERIMENT ---
-            # content_settings=ContentSettings(
-            #     content_type=content_type,
-            #     cache_control=cache_control_for(path),
-            # ),
-            # ----------------------------------------------
+            content_settings=ContentSettings(
+                content_type=content_type,
+                cache_control=cache_control_for(path),
+            ),
         )
-        
     print(f"uploaded {blob_name:<20} type={content_type:<24} cache={cache_control_for(path)}")
 
 print("\nVisit:", f"https://{ACCOUNT}.z13.web.core.windows.net/   (your exact host is in provision.py output)")
