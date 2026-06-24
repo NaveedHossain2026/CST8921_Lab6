@@ -31,5 +31,5 @@ print(f"Creating storage account '{ACCOUNT}' (this is a long-running operation).
 poller = storage_client.storage_accounts.begin_create(RG, ACCOUNT, params)
 account = poller.result()   # block until the LRO completes
 
-print("Created:", account.name)
+print("Created:", account.name) //
 print("Primary web endpoint:", account.primary_endpoints.web)
